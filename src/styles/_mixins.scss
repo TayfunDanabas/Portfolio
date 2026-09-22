@@ -1,0 +1,14 @@
+$breakpoint-mobile: 800px;
+$breakpoint-wide: 1440px;
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: $breakpoint-wide) {
+    @content;
+  }
+}
