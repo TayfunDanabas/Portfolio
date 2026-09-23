@@ -15,7 +15,13 @@
       <button class="language-button" (click)="switchLanguage('en')">EN</button>
     </div>
 
-    <button class="burger" [attr.aria-label]="'nav.openMenu' | translate">
+    <button
+      class="burger"
+      [class.open]="isMenuOpen"
+      [attr.aria-label]="(isMenuOpen ? 'nav.closeMenu' : 'nav.openMenu') | translate"
+      [attr.aria-expanded]="isMenuOpen"
+      (click)="toggleMenu()"
+    >
       <span class="burger-line"></span>
       <span class="burger-line"></span>
       <span class="burger-line"></span>

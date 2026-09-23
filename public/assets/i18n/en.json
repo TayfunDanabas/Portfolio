@@ -4,6 +4,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   }
 }

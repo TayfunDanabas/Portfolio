@@ -11,6 +11,7 @@ export class Header implements OnInit {
   private translate = inject(TranslateService);
 
   currentLanguage = 'de';
+  isMenuOpen = false;
 
   navItems = [
     { label: 'nav.whyMe', link: '#why-me' },
@@ -29,5 +30,9 @@ export class Header implements OnInit {
     this.translate.use(language);
     localStorage.setItem('language', language);
     document.documentElement.lang = language;
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }
