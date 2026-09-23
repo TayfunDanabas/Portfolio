@@ -3,11 +3,17 @@
     <div class="menu">
       <span class="logo">&lt;TD&gt;</span>
       <nav class="nav">
-        <a class="nav-link" href="#why-me">Why me</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#why-me">{{ 'nav.whyMe' | translate }}</a>
+        <a class="nav-link" href="#skills">{{ 'nav.skills' | translate }}</a>
+        <a class="nav-link" href="#projects">{{ 'nav.projects' | translate }}</a>
+        <a class="nav-link" href="#contact">{{ 'nav.contact' | translate }}</a>
       </nav>
+    </div>
+
+    <div class="language">
+      <button class="language-button" (click)="switchLanguage('de')">DE</button>
+      <span class="language-separator">|</span>
+      <button class="language-button" (click)="switchLanguage('en')">EN</button>
     </div>
   </div>
 </header>

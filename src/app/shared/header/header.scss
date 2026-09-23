@@ -54,6 +54,34 @@
   color: var(--color-mint);
 }
 
+.language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.language-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-coral);
+}
+
+.language-button:hover {
+  color: var(--color-mint);
+}
+
+.language-separator {
+  font-family: var(--font-separator);
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-coral);
+}
+
 .logo {
   transform: translateY(4px);
   font-family: var(--font-logo);

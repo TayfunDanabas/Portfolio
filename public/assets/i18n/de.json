@@ -1,1 +1,8 @@
-{}
+{
+  "nav": {
+    "whyMe": "Über mich",
+    "skills": "Skills",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  }
+}
