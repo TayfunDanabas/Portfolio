@@ -1,0 +1,27 @@
+@use 'mixins' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 clamp(24px, 10vw, 140px);
+  background: linear-gradient(180deg, var(--color-dark) 64%, rgba(11, 4, 45, 0.5) 100%);
+
+  @include mobile {
+    padding: 0 24px;
+    background: var(--color-dark);
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1160px;
+}
