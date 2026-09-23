@@ -25,3 +25,14 @@
   width: 100%;
   max-width: 1160px;
 }
+
+.logo {
+  transform: translateY(4px);
+  font-family: var(--font-logo);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 2.4px;
+  color: var(--color-coral);
+  -webkit-text-stroke: 1px var(--color-coral);
+}
