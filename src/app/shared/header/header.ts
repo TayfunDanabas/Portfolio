@@ -12,6 +12,13 @@ export class Header implements OnInit {
 
   currentLanguage = 'de';
 
+  navItems = [
+    { label: 'nav.whyMe', link: '#why-me' },
+    { label: 'nav.skills', link: '#skills' },
+    { label: 'nav.projects', link: '#projects' },
+    { label: 'nav.contact', link: '#contact' },
+  ];
+
   ngOnInit() {
     const savedLanguage = localStorage.getItem('language');
     this.switchLanguage(savedLanguage === 'en' ? 'en' : 'de');

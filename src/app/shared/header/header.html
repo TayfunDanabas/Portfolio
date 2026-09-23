@@ -3,10 +3,9 @@
     <div class="menu">
       <span class="logo">&lt;TD&gt;</span>
       <nav class="nav">
-        <a class="nav-link" href="#why-me">{{ 'nav.whyMe' | translate }}</a>
-        <a class="nav-link" href="#skills">{{ 'nav.skills' | translate }}</a>
-        <a class="nav-link" href="#projects">{{ 'nav.projects' | translate }}</a>
-        <a class="nav-link" href="#contact">{{ 'nav.contact' | translate }}</a>
+        @for (item of navItems; track item.link) {
+          <a class="nav-link" [href]="item.link">{{ item.label | translate }}</a>
+        }
       </nav>
     </div>
 
