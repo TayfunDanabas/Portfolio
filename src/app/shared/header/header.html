@@ -15,5 +15,11 @@
       <span class="language-separator">|</span>
       <button class="language-button" (click)="switchLanguage('en')">EN</button>
     </div>
+
+    <button class="burger" [attr.aria-label]="'nav.openMenu' | translate">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
   </div>
 </header>
