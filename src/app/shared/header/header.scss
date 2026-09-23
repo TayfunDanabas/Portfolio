@@ -26,6 +26,34 @@
   max-width: 1160px;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.nav-link {
+  min-width: 100px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-coral);
+}
+
+.nav-link:hover {
+  color: var(--color-mint);
+}
+
 .logo {
   transform: translateY(4px);
   font-family: var(--font-logo);
