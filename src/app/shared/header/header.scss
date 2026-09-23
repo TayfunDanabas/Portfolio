@@ -30,11 +30,19 @@
   display: flex;
   align-items: center;
   gap: 48px;
+
+  @include compact {
+    gap: 32px;
+  }
 }
 
 .nav {
   display: flex;
   gap: 32px;
+
+  @include compact {
+    gap: clamp(16px, 2.5vw, 32px);
+  }
 
   @include mobile {
     display: none;
@@ -48,6 +56,10 @@
   line-height: 1.2;
   text-align: center;
   color: var(--color-coral);
+
+  @include compact {
+    min-width: 0;
+  }
 }
 
 .nav-link:hover {
