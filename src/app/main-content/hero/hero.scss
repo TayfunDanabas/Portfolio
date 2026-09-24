@@ -1,0 +1,12 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+}
