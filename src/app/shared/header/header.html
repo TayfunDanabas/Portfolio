@@ -27,4 +27,20 @@
       <span class="burger-line"></span>
     </button>
   </div>
+
+  <div class="mobile-menu" [class.open]="isMenuOpen">
+    <nav class="mobile-nav">
+      @for (item of navItems; track item.link) {
+        <a class="mobile-nav-link" [href]="item.link" (click)="closeMenu()">
+          {{ item.label | translate }}
+        </a>
+      }
+    </nav>
+
+    <div class="mobile-language">
+      <button class="language-button" (click)="switchLanguage('de')">DE</button>
+      <span class="language-separator">|</span>
+      <button class="language-button" (click)="switchLanguage('en')">EN</button>
+    </div>
+  </div>
 </header>
