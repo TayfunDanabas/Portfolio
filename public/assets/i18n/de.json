@@ -6,5 +6,8 @@
     "contact": "Kontakt",
     "openMenu": "Menü öffnen",
     "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "contact": "Schreib mir"
   }
 }

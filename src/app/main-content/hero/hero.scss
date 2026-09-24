@@ -40,3 +40,28 @@
   height: 554px;
   max-height: calc(100vh - 160px);
 }
+
+.hero-contact {
+  position: absolute;
+  left: 100px;
+  bottom: 325px;
+  padding: 30px 15px;
+  border: 1px solid var(--color-mint);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--color-coral);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.hero-contact:hover {
+  color: var(--color-mint);
+}
+
+.hero-contact:active {
+  border-color: var(--color-coral);
+  font-weight: 700;
+  color: var(--color-coral);
+}
