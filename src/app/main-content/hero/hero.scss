@@ -6,7 +6,29 @@
 
 .hero-content {
   position: relative;
+  display: flex;
+  align-items: flex-end;
   width: 100%;
   max-width: 1440px;
   height: 100%;
+  padding: 0 50px 50px 100px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-job {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero-name {
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1;
 }
