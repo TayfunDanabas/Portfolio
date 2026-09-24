@@ -8,6 +8,7 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "contact": "Contact me"
+    "contact": "Contact me",
+    "scrollDown": "Scroll down"
   }
 }

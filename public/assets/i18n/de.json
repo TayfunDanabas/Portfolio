@@ -8,6 +8,7 @@
     "closeMenu": "Menü schließen"
   },
   "hero": {
-    "contact": "Schreib mir"
+    "contact": "Schreib mir",
+    "scrollDown": "Nach unten scrollen"
   }
 }

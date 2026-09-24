@@ -65,3 +65,33 @@
   font-weight: 700;
   color: var(--color-coral);
 }
+
+.hero-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 38px;
+  height: 68px;
+  padding-bottom: 6px;
+  border: 1px solid transparent;
+  transform: translateX(-50%);
+}
+
+.hero-arrow:hover {
+  border-color: var(--color-mint);
+}
+
+.arrow-hover {
+  display: none;
+}
+
+.hero-arrow:hover .arrow-default {
+  display: none;
+}
+
+.hero-arrow:hover .arrow-hover {
+  display: block;
+}
