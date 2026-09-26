@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   height: 100vh;
+  min-height: 650px;
 }
 
 .hero-content {
@@ -12,7 +13,6 @@
   align-items: flex-end;
   width: 100%;
   max-width: 1440px;
-  height: 100%;
   padding: 0 50px 50px clamp(40px, 7vw, 100px);
 
   @include mobile {
@@ -64,7 +64,7 @@
   right: 50px;
   bottom: 60px;
   height: min(554px, 38.5vw);
-  max-height: calc(100vh - 160px);
+  max-height: calc(100% - 160px);
 
   @include mobile {
     position: static;
