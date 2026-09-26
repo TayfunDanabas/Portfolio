@@ -1,0 +1,17 @@
+.why-me {
+  display: flex;
+  justify-content: center;
+  padding: 45px 105px 105px;
+}
+
+.why-me-content {
+  display: flex;
+  width: 100%;
+  max-width: 1230px;
+}
+
+.why-me-photo {
+  width: 490px;
+  height: 450px;
+  object-fit: cover;
+}
