@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .hero {
   display: flex;
   justify-content: center;
@@ -12,12 +14,25 @@
   max-width: 1440px;
   height: 100%;
   padding: 0 50px 50px 100px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 67px 24px 0;
+  }
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @include mobile {
+    align-items: center;
+    gap: 0;
+    padding-top: 8px;
+    white-space: nowrap;
+  }
 }
 
 .hero-job {
@@ -25,12 +40,23 @@
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
+
+  @include mobile {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
 }
 
 .hero-name {
   font-size: 82px;
   font-weight: 700;
   line-height: 1;
+
+  @include mobile {
+    font-size: clamp(32px, 10.25vw, 40px);
+    line-height: 1.2;
+  }
 }
 
 .hero-photo {
@@ -39,6 +65,14 @@
   bottom: 60px;
   height: 554px;
   max-height: calc(100vh - 160px);
+
+  @include mobile {
+    position: static;
+    height: 370px;
+    max-height: none;
+    object-fit: contain;
+    object-position: bottom;
+  }
 }
 
 .hero-contact {
@@ -54,6 +88,10 @@
   color: var(--color-coral);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .hero-contact:hover {
@@ -78,6 +116,10 @@
   padding-bottom: 6px;
   border: 1px solid transparent;
   transform: translateX(-50%);
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .hero-arrow:hover {
