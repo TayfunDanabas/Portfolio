@@ -20,6 +20,12 @@
     align-items: center;
     padding: 67px 24px 0;
   }
+
+  @include wide {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17.5vh 0 0 140px;
+  }
 }
 
 .hero-text {
@@ -73,6 +79,14 @@
     object-fit: contain;
     object-position: bottom;
   }
+
+  @include wide {
+    left: 352px;
+    right: auto;
+    bottom: 0;
+    height: calc(82.5vh - 200px);
+    max-height: none;
+  }
 }
 
 .hero-contact {
@@ -91,6 +105,14 @@
 
   @include mobile {
     display: none;
+  }
+
+  @include wide {
+    position: static;
+    margin-top: 140px;
+    padding: 15px 30px;
+    writing-mode: horizontal-tb;
+    transform: none;
   }
 }
 
@@ -119,6 +141,12 @@
 
   @include mobile {
     display: none;
+  }
+
+  @include wide {
+    position: static;
+    margin-top: 80px;
+    transform: none;
   }
 }
 
