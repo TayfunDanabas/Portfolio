@@ -37,3 +37,79 @@
   font-size: 16px;
   line-height: 1.2;
 }
+
+.why-me-details {
+  position: relative;
+  width: 568px;
+  height: 186px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.details-title {
+  position: absolute;
+  top: 0;
+  right: 452px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--color-coral);
+}
+
+.detail {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.detail-location {
+  top: 8px;
+  left: 180px;
+}
+
+.detail-relocate {
+  top: 68px;
+  left: 385px;
+}
+
+.detail-remote {
+  top: 139px;
+  left: 180px;
+}
+
+.detail-icon {
+  position: relative;
+}
+
+.icon-hover {
+  position: absolute;
+  display: none;
+  max-width: none;
+}
+
+.detail:hover .icon-default {
+  visibility: hidden;
+}
+
+.detail:hover .icon-hover {
+  display: block;
+}
+
+.detail-location .icon-hover {
+  top: 42px;
+  left: 6px;
+}
+
+.detail-relocate .icon-hover {
+  top: -2px;
+  left: -3px;
+}
+
+.detail-remote .icon-hover {
+  top: -6px;
+  left: -5px;
+}

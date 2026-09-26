@@ -13,6 +13,10 @@
   },
   "whyMe": {
     "headline": "Über mich",
-    "text": "Ich mache eine Umschulung zum Softwareentwickler an der Developer Akademie und lerne, Webanwendungen vom Frontend bis zum Backend zu bauen. Mich begeistert, aus einer Idee etwas zu machen, das Menschen wirklich nutzen. Knifflige Probleme löse ich gern Schritt für Schritt und lerne jeden Tag dazu."
+    "text": "Ich mache eine Umschulung zum Softwareentwickler an der Developer Akademie und lerne, Webanwendungen vom Frontend bis zum Backend zu bauen. Mich begeistert, aus einer Idee etwas zu machen, das Menschen wirklich nutzen. Knifflige Probleme löse ich gern Schritt für Schritt und lerne jeden Tag dazu.",
+    "iAm": "Ich bin",
+    "location": "wohnhaft<br>in Herne",
+    "relocate": "offen für<br>einen Umzug",
+    "remote": "offen für<br>Remote-Arbeit"
   }
 }

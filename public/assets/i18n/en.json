@@ -13,6 +13,10 @@
   },
   "whyMe": {
     "headline": "Why me",
-    "text": "I am retraining as a software developer at the Developer Akademie, learning to build modern web apps from frontend to backend. What excites me most is turning an idea into something people actually use. I enjoy solving tricky problems step by step and learning every day."
+    "text": "I am retraining as a software developer at the Developer Akademie, learning to build modern web apps from frontend to backend. What excites me most is turning an idea into something people actually use. I enjoy solving tricky problems step by step and learning every day.",
+    "iAm": "I am",
+    "location": "located<br>in Herne",
+    "relocate": "open to<br>relocate",
+    "remote": "open to<br>work remote"
   }
 }
