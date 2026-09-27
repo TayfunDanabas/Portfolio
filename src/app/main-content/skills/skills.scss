@@ -35,6 +35,15 @@
   row-gap: 105px;
   max-width: 1128px;
   margin-top: 38px;
+
+  @include mobile {
+    grid-template-columns: repeat(3, 45px);
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 40px;
+    max-width: none;
+    margin-top: 24px;
+  }
 }
 
 .skill {
@@ -46,6 +55,10 @@
 
 .skill-icon {
   height: 60px;
+
+  @include mobile {
+    height: 45px;
+  }
 }
 
 .skill-name {
@@ -53,11 +66,31 @@
   font-weight: 700;
   line-height: 1.4;
   white-space: nowrap;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.challenge {
+  @include mobile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 .challenge-name {
   white-space: pre;
   text-align: center;
+
+  @include mobile {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+  }
 }
 
 .skills-cta {
@@ -71,10 +104,19 @@
     margin-top: 48px;
     text-align: center;
   }
+
+  @include mobile {
+    margin-top: 24px;
+  }
 }
 
 .skills-cta-text {
   max-width: 400px;
   font-size: 18px;
   line-height: 1.2;
+
+  @include mobile {
+    max-width: 340px;
+    font-size: 16px;
+  }
 }
