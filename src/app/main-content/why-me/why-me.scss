@@ -196,8 +196,16 @@
   }
 }
 
+.detail-location:hover .location-pin {
+  transform: translateY(-6px);
+
+  @include mobile {
+    transform: none;
+  }
+}
+
 .detail-location .icon-hover {
-  top: 42px;
+  top: 36px;
   left: 6px;
 }
 
