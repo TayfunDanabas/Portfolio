@@ -19,5 +19,8 @@
     "relocate": "open to\nrelocate",
     "remote": "open to\nwork remote",
     "button": "Let’s talk"
+  },
+  "skills": {
+    "headline": "My Skills"
   }
 }
