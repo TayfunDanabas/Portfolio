@@ -3,7 +3,7 @@
 .why-me {
   display: flex;
   justify-content: center;
-  padding: 45px 105px 105px;
+  padding: 45px clamp(40px, 7.3vw, 105px) 105px;
 
   @include mobile {
     padding: 0 16px 48px;
@@ -12,12 +12,20 @@
 
 .why-me-content {
   display: flex;
+  gap: 20px;
   width: 100%;
   max-width: 1230px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
 }
 
 .why-me-photo {
   width: 490px;
+  min-width: 0;
   height: 450px;
   object-fit: cover;
 
@@ -31,11 +39,18 @@
   flex-direction: column;
   align-items: flex-end;
   flex: 1;
+  min-width: 660px;
   text-align: right;
 
-  @include mobile {
+  @include tablet {
     align-items: center;
+    width: 568px;
+    min-width: 0;
     text-align: center;
+  }
+
+  @include mobile {
+    width: 100%;
   }
 }
 
@@ -246,4 +261,14 @@
 
 .why-me-button {
   margin-top: auto;
+
+  @include tablet {
+    align-self: flex-end;
+    margin-top: 24px;
+  }
+
+  @include mobile {
+    align-self: center;
+    margin-top: 0;
+  }
 }
