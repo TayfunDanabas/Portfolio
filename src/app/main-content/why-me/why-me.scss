@@ -1,7 +1,13 @@
+@use 'mixins' as *;
+
 .why-me {
   display: flex;
   justify-content: center;
   padding: 45px 105px 105px;
+
+  @include mobile {
+    padding: 0 16px 48px;
+  }
 }
 
 .why-me-content {
@@ -14,6 +20,10 @@
   width: 490px;
   height: 450px;
   object-fit: cover;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .why-me-info {
@@ -22,6 +32,11 @@
   align-items: flex-end;
   flex: 1;
   text-align: right;
+
+  @include mobile {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .why-me-headline {
@@ -29,6 +44,11 @@
   font-weight: 500;
   line-height: 1.2;
   color: var(--color-coral);
+
+  @include mobile {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
 
 .why-me-text {
@@ -36,6 +56,10 @@
   margin-top: 15px;
   font-size: 16px;
   line-height: 1.2;
+
+  @include mobile {
+    margin-top: 18px;
+  }
 }
 
 .why-me-details {
@@ -44,6 +68,17 @@
   height: 186px;
   margin-top: 24px;
   text-align: left;
+
+  @include mobile {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    height: auto;
+    margin-top: 6px;
+  }
 }
 
 .details-title {
@@ -55,6 +90,21 @@
   line-height: 1.2;
   white-space: nowrap;
   color: var(--color-coral);
+
+  @include mobile {
+    position: static;
+    font-size: 18px;
+  }
+}
+
+.why-me-details ul {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 10px;
+  }
 }
 
 .detail {
@@ -64,6 +114,12 @@
   gap: 16px;
   font-size: 18px;
   line-height: 1.2;
+
+  @include mobile {
+    position: static;
+    gap: 10px;
+    font-size: 16px;
+  }
 }
 
 .detail-location {
@@ -83,6 +139,24 @@
 
 .detail-icon {
   position: relative;
+
+  @include mobile {
+    width: 26px;
+  }
+}
+
+.detail-remote .detail-icon {
+  @include mobile {
+    width: 46px;
+  }
+}
+
+.detail-text {
+  white-space: pre-line;
+
+  @include mobile {
+    white-space: normal;
+  }
 }
 
 .icon-hover {
@@ -93,10 +167,18 @@
 
 .detail:hover .icon-default {
   visibility: hidden;
+
+  @include mobile {
+    visibility: visible;
+  }
 }
 
 .detail:hover .icon-hover {
   display: block;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .detail-location .icon-hover {
@@ -116,21 +198,50 @@
 
 .details-arrow {
   position: absolute;
+
+  @include mobile {
+    position: static;
+  }
 }
 
 .arrow-location {
   top: 62px;
   left: 150px;
+
+  @include mobile {
+    order: -1;
+    align-self: flex-start;
+    margin-left: 8px;
+  }
 }
 
 .arrow-remote {
   top: 135px;
   left: 385px;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .arrow-button {
   top: 128px;
   right: 0;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.arrow-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+    order: 1;
+    align-self: flex-end;
+    margin-right: 8px;
+  }
 }
 
 .why-me-button {
