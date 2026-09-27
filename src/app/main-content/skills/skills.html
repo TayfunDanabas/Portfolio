@@ -1,5 +1,17 @@
 <section class="skills" id="skills">
   <div class="skills-content">
     <h2 class="skills-headline">{{ 'skills.headline' | translate }}</h2>
+    <ul class="skills-list">
+      @for (skill of skills; track skill.name) {
+        <li class="skill">
+          <img class="skill-icon" [src]="'./assets/icons/skills/' + skill.icon + '.svg'" alt="" />
+          <span class="skill-name">{{ skill.name }}</span>
+        </li>
+      }
+      <li class="skill">
+        <img class="skill-icon" src="./assets/icons/skills/challenge-me.svg" alt="" />
+        <span class="skill-name skill-challenge">{{ 'skills.challenge' | translate }}</span>
+      </li>
+    </ul>
   </div>
 </section>
