@@ -8,10 +8,15 @@
           <span class="skill-name">{{ skill.name }}</span>
         </li>
       }
-      <li class="skill">
+      <li class="skill challenge">
         <img class="skill-icon" src="./assets/icons/skills/challenge-me.svg" alt="" />
-        <span class="skill-name skill-challenge">{{ 'skills.challenge' | translate }}</span>
+        <span class="skill-name challenge-name">{{ 'skills.challenge' | translate }}</span>
       </li>
     </ul>
+    <div class="skills-cta">
+      <img src="./assets/icons/arrows/arrow-challenge-mobile.svg" alt="" />
+      <p class="skills-cta-text">{{ 'skills.challengeText' | translate }}</p>
+      <a class="btn-primary" href="#contact">{{ 'skills.button' | translate }}</a>
+    </div>
   </div>
 </section>

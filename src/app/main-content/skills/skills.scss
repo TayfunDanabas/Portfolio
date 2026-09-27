@@ -29,10 +29,11 @@
 }
 
 .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 120px;
+  display: grid;
+  grid-template-columns: repeat(6, 88px);
+  justify-content: space-between;
   row-gap: 105px;
+  max-width: 1128px;
   margin-top: 38px;
 }
 
@@ -41,7 +42,6 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 88px;
 }
 
 .skill-icon {
@@ -55,7 +55,26 @@
   white-space: nowrap;
 }
 
-.skill-challenge {
-  white-space: pre-line;
+.challenge-name {
+  white-space: pre;
   text-align: center;
+}
+
+.skills-cta {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    text-align: center;
+  }
+}
+
+.skills-cta-text {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 1.2;
 }
