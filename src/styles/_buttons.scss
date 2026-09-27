@@ -1,0 +1,31 @@
+@use 'mixins' as *;
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--color-mint);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+
+  @include mobile {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.btn-primary:hover {
+  font-weight: 400;
+  color: var(--color-coral);
+}
+
+.btn-primary:active {
+  font-weight: 700;
+  color: var(--color-coral);
+
+  @include mobile {
+    font-weight: 500;
+  }
+}
