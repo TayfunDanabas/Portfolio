@@ -21,6 +21,10 @@
     align-items: center;
     gap: 48px;
   }
+
+  @include mobile {
+    gap: 32px;
+  }
 }
 
 .why-me-photo {
@@ -30,7 +34,10 @@
   object-fit: cover;
 
   @include mobile {
-    display: none;
+    width: 100%;
+    max-width: 490px;
+    height: auto;
+    aspect-ratio: 490 / 450;
   }
 }
 
