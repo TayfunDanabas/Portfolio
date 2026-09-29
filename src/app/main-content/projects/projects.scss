@@ -33,6 +33,10 @@
   flex-direction: column;
   gap: 64px;
   margin-top: 69px;
+
+  @include tablet {
+    margin-top: 48px;
+  }
 }
 
 .project {
@@ -40,12 +44,26 @@
   align-items: flex-start;
   gap: 48px;
   max-width: 1134px;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: none;
+    text-align: center;
+  }
 }
 
 .project:nth-child(even) {
   flex-direction: row-reverse;
   margin-left: auto;
   text-align: right;
+
+  @include tablet {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .project-preview {
@@ -53,6 +71,15 @@
   flex-shrink: 0;
   width: 588px;
   height: 371px;
+
+  @include tablet {
+    order: 4;
+    width: 100%;
+    max-width: 588px;
+    height: auto;
+    aspect-ratio: 588 / 371;
+    margin-top: 24px;
+  }
 }
 
 .project-preview::after {
@@ -84,6 +111,10 @@
 .project-info {
   flex: 1;
   margin-top: -12px;
+
+  @include tablet {
+    display: contents;
+  }
 }
 
 .project-name {
@@ -102,14 +133,29 @@
   margin-top: 40px;
   font-size: 18px;
   line-height: 1.4;
+
+  @include tablet {
+    max-width: 588px;
+    margin-top: 24px;
+  }
 }
 
 .project-buttons {
   display: flex;
   gap: 24px;
   margin-top: 48px;
+
+  @include tablet {
+    order: 5;
+    justify-content: center;
+    margin-top: 24px;
+  }
 }
 
 .project:nth-child(even) .project-buttons {
   justify-content: flex-end;
+
+  @include tablet {
+    justify-content: center;
+  }
 }
