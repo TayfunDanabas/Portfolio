@@ -37,6 +37,11 @@
   @include tablet {
     margin-top: 48px;
   }
+
+  @include mobile {
+    gap: 48px;
+    margin-top: 24px;
+  }
 }
 
 .project {
@@ -80,6 +85,10 @@
     aspect-ratio: 588 / 371;
     margin-top: 24px;
   }
+
+  @include mobile {
+    max-width: 337px;
+  }
 }
 
 .project-preview::after {
@@ -121,12 +130,20 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
+
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .project-technologies {
   margin-top: 18px;
   font-size: 18px;
   line-height: 1.4;
+
+  @include mobile {
+    margin-top: 13px;
+  }
 }
 
 .project-description {
@@ -137,6 +154,12 @@
   @include tablet {
     max-width: 588px;
     margin-top: 24px;
+  }
+
+  @include mobile {
+    max-width: 337px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 
