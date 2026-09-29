@@ -25,5 +25,8 @@
     "challenge": "Challenge\nme",
     "challengeText": "I am always happy to learn new technologies. Just tell me what you need.",
     "button": "Let’s talk"
+  },
+  "projects": {
+    "headline": "My Projects"
   }
 }

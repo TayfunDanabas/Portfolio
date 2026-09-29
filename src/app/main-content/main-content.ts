@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero/hero';
+import { Projects } from './projects/projects';
 import { Skills } from './skills/skills';
 import { WhyMe } from './why-me/why-me';
 
 @Component({
-  imports: [Hero, WhyMe, Skills],
+  imports: [Hero, WhyMe, Skills, Projects],
   selector: 'app-main-content',
   styleUrl: './main-content.scss',
   templateUrl: './main-content.html',

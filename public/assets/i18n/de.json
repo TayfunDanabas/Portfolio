@@ -25,5 +25,8 @@
     "challenge": "Fordere\nmich heraus",
     "challengeText": "Ich lerne immer gern neue Technologien dazu. Sag mir einfach, was du brauchst.",
     "button": "Lass uns reden"
+  },
+  "projects": {
+    "headline": "Meine Projekte"
   }
 }
