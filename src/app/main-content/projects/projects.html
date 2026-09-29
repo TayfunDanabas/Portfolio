@@ -1,5 +1,47 @@
 <section class="projects" id="projects">
   <div class="projects-content">
     <h2 class="projects-headline">{{ 'projects.headline' | translate }}</h2>
+    <div class="project-list">
+      @for (project of projects; track project.name) {
+        <article class="project">
+          <div class="project-preview">
+            @if (project.image) {
+              <img
+                class="project-image"
+                [src]="'./assets/img/projects/' + project.image"
+                [alt]="project.name"
+              />
+            } @else {
+              <div class="project-image project-placeholder">
+                {{ 'projects.comingSoon' | translate }}
+              </div>
+            }
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">{{ project.name }}</h3>
+            <p class="project-technologies">{{ project.technologies }}</p>
+            <p class="project-description">{{ project.description | translate }}</p>
+            <div class="project-buttons">
+              <a
+                class="btn-secondary"
+                [class.disabled]="!project.github"
+                [attr.href]="project.github || null"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn-primary"
+                [class.disabled]="!project.live"
+                [attr.href]="project.live || null"
+                target="_blank"
+                rel="noopener"
+                >{{ 'projects.liveTest' | translate }}</a
+              >
+            </div>
+          </div>
+        </article>
+      }
+    </div>
   </div>
 </section>

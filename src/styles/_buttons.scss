@@ -29,3 +29,41 @@
     font-weight: 500;
   }
 }
+
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 29px;
+  border: 1px solid var(--color-mint);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-coral);
+
+  @include mobile {
+    padding: 11px 19px;
+    font-size: 16px;
+  }
+}
+
+.btn-secondary:hover {
+  color: var(--color-mint);
+}
+
+.btn-secondary:active {
+  border-color: var(--color-coral);
+  font-weight: 700;
+  color: var(--color-coral);
+}
+
+.btn-primary.disabled {
+  background-color: var(--color-inactive-light);
+  font-weight: 700;
+  color: #fff;
+  pointer-events: none;
+}
+
+.btn-secondary.disabled {
+  border-color: var(--color-inactive);
+  color: var(--color-inactive);
+  pointer-events: none;
+}
