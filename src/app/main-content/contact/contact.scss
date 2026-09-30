@@ -202,6 +202,15 @@
   color: var(--color-error);
 }
 
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-mint);
+  caret-color: var(--color-mint);
+  filter: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .form-input::placeholder {
   color: var(--color-mint);
   opacity: 0.6;
