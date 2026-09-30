@@ -88,9 +88,20 @@
             <span class="privacy-error">{{ 'contact.privacyError' | translate }}</span>
           }
         </div>
-        <button class="btn-secondary form-button" type="submit" [disabled]="contactForm.invalid">
+        <button
+          class="btn-secondary form-button"
+          type="submit"
+          [disabled]="contactForm.invalid || isSending()"
+        >
           {{ 'contact.send' | translate }}
         </button>
+        @if (feedback()) {
+          <p class="form-feedback" [class.error]="feedback() === 'error'">
+            {{
+              (feedback() === 'success' ? 'contact.sendSuccess' : 'contact.sendError') | translate
+            }}
+          </p>
+        }
       </div>
     </form>
   </div>

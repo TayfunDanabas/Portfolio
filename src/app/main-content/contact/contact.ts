@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, isDevMode, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -9,6 +10,12 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './contact.html',
 })
 export class Contact {
+  private http = inject(HttpClient);
+
+  mailTest = isDevMode();
+  isSending = signal(false);
+  feedback = signal('');
+
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [
@@ -30,8 +37,34 @@ export class Contact {
   }
 
   onSubmit() {
-    if (this.contactForm.valid) {
-      this.contactForm.reset();
+    if (this.contactForm.invalid) {
+      return;
     }
+    if (this.mailTest) {
+      this.onSuccess();
+      return;
+    }
+    const { name, email, message } = this.contactForm.value;
+    this.isSending.set(true);
+    this.http
+      .post('sendMail.php', JSON.stringify({ name, email, message }), {
+        headers: { 'Content-Type': 'text/plain' },
+        responseType: 'text',
+      })
+      .subscribe({
+        next: () => this.onSuccess(),
+        error: () => this.showFeedback('error'),
+      });
+  }
+
+  onSuccess() {
+    this.contactForm.reset();
+    this.showFeedback('success');
+  }
+
+  showFeedback(type: string) {
+    this.isSending.set(false);
+    this.feedback.set(type);
+    setTimeout(() => this.feedback.set(''), 4000);
   }
 }

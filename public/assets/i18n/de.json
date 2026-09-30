@@ -50,6 +50,8 @@
     "emailError": "Deine E-Mail ist erforderlich",
     "emailInvalid": "Bitte gib eine gültige E-Mail ein",
     "messageError": "Deine Nachricht ist erforderlich",
-    "privacyError": "Bitte akzeptiere die Datenschutzerklärung."
+    "privacyError": "Bitte akzeptiere die Datenschutzerklärung.",
+    "sendSuccess": "Danke! Deine Nachricht wurde gesendet.",
+    "sendError": "Senden fehlgeschlagen. Bitte versuche es später noch einmal."
   }
 }

@@ -143,6 +143,7 @@
 }
 
 .form-bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -210,4 +211,17 @@
 .form-button {
   flex-shrink: 0;
   margin-top: 24px;
+}
+
+.form-feedback {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-success);
+}
+
+.form-feedback.error {
+  color: var(--color-error);
 }
