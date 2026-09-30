@@ -33,5 +33,11 @@
     "join": "Aufgabenmanager nach dem Kanban-Prinzip. Aufgaben per Drag-and-drop erstellen, organisieren und Kontakten zuweisen.",
     "elPolloLoco": "2D-Jump-and-Run mit JavaScript und Canvas-API. Hilf Pepe, Münzen und Salsaflaschen zu sammeln und das riesige Huhn zu besiegen.",
     "pokedex": "Pokédex mit Daten aus der PokéAPI. Pokémon suchen, weitere nachladen und Infos, Werte und Entwicklungen ansehen."
+  },
+  "contact": {
+    "headline": "Kontaktiere mich",
+    "text": "Du hast eine Frage, ein Projekt oder eine offene Stelle? Schreib mir eine Nachricht. Ich suche eine Stelle als Fullstack-Entwickler.",
+    "email": "E-Mail:",
+    "phone": "Tel:"
   }
 }

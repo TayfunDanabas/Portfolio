@@ -33,5 +33,11 @@
     "join": "Task manager inspired by the Kanban system. Create and organize tasks with drag and drop and assign them to contacts.",
     "elPolloLoco": "2D jump and run game with JavaScript and the Canvas API. Help Pepe collect coins and salsa bottles to defeat the giant hen.",
     "pokedex": "Pokédex with data from the PokéAPI. Search for Pokémon, load more and view their info, stats and evolutions."
+  },
+  "contact": {
+    "headline": "Contact me",
+    "text": "Got a question, a project or an open position? Write me a message. I am looking for a job as a fullstack developer.",
+    "email": "E-mail:",
+    "phone": "Tel:"
   }
 }
