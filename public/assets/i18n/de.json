@@ -45,6 +45,11 @@
     "privacyBefore": "Ich habe die",
     "privacyLink": "Datenschutzerklärung",
     "privacyAfter": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-    "send": "Senden"
+    "send": "Senden",
+    "nameError": "Dein Name ist erforderlich",
+    "emailError": "Deine E-Mail ist erforderlich",
+    "emailInvalid": "Bitte gib eine gültige E-Mail ein",
+    "messageError": "Deine Nachricht ist erforderlich",
+    "privacyError": "Bitte akzeptiere die Datenschutzerklärung."
   }
 }

@@ -62,7 +62,8 @@
   pointer-events: none;
 }
 
-.btn-secondary.disabled {
+.btn-secondary.disabled,
+.btn-secondary:disabled {
   border-color: var(--color-inactive);
   color: var(--color-inactive);
   pointer-events: none;

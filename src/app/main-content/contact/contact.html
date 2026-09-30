@@ -19,25 +19,62 @@
     </div>
     <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-fields">
-        <input
-          class="form-input"
-          formControlName="name"
-          type="text"
-          autocomplete="name"
-          [placeholder]="'contact.namePlaceholder' | translate"
-        />
-        <input
-          class="form-input"
-          formControlName="email"
-          type="email"
-          autocomplete="email"
-          [placeholder]="'contact.emailPlaceholder' | translate"
-        />
-        <textarea
-          class="form-input form-message"
-          formControlName="message"
-          [placeholder]="'contact.messagePlaceholder' | translate"
-        ></textarea>
+        <div class="field">
+          <input
+            class="form-input"
+            [class.invalid]="isInvalid('name')"
+            formControlName="name"
+            type="text"
+            autocomplete="name"
+            [placeholder]="
+              (isInvalid('name') ? 'contact.nameError' : 'contact.namePlaceholder') | translate
+            "
+          />
+          @if (isInvalid('name')) {
+            <img class="field-icon" src="./assets/icons/form/input-error.svg" alt="" />
+          }
+          @if (isValid('name')) {
+            <img class="field-icon" src="./assets/icons/form/input-done.svg" alt="" />
+          }
+        </div>
+        <div class="field">
+          <input
+            class="form-input"
+            [class.invalid]="isInvalid('email')"
+            formControlName="email"
+            type="email"
+            autocomplete="email"
+            [placeholder]="
+              (isInvalid('email') ? 'contact.emailError' : 'contact.emailPlaceholder') | translate
+            "
+          />
+          @if (isInvalid('email')) {
+            <img class="field-icon" src="./assets/icons/form/input-error.svg" alt="" />
+            @if (contactForm.controls.email.value) {
+              <span class="field-error">{{ 'contact.emailInvalid' | translate }}</span>
+            }
+          }
+          @if (isValid('email')) {
+            <img class="field-icon" src="./assets/icons/form/input-done.svg" alt="" />
+          }
+        </div>
+        <div class="field field-message">
+          <textarea
+            class="form-input form-message"
+            [class.invalid]="isInvalid('message')"
+            formControlName="message"
+            [placeholder]="
+              (isInvalid('message') ? 'contact.messageError' : 'contact.messagePlaceholder')
+                | translate
+            "
+          ></textarea>
+          @if (isInvalid('message')) {
+            <img class="field-icon" src="./assets/icons/form/input-error.svg" alt="" />
+          }
+          @if (isValid('message')) {
+            <img class="field-icon" src="./assets/icons/form/input-done.svg" alt="" />
+          }
+        </div>
       </div>
       <div class="form-bottom">
         <div class="privacy">
@@ -47,8 +84,11 @@
             <span class="privacy-link">{{ 'contact.privacyLink' | translate }}</span>
             {{ 'contact.privacyAfter' | translate }}
           </label>
+          @if (isInvalid('privacy')) {
+            <span class="privacy-error">{{ 'contact.privacyError' | translate }}</span>
+          }
         </div>
-        <button class="btn-secondary form-button" type="submit">
+        <button class="btn-secondary form-button" type="submit" [disabled]="contactForm.invalid">
           {{ 'contact.send' | translate }}
         </button>
       </div>
