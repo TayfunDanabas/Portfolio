@@ -167,6 +167,18 @@
   cursor: pointer;
 }
 
+.privacy-checkbox:hover {
+  background-image: url('/assets/icons/form/checkbox-hover.svg');
+
+  @include mobile {
+    background-image: url('/assets/icons/form/checkbox.svg');
+  }
+}
+
+.privacy-checkbox:active {
+  background-image: url('/assets/icons/form/checkbox-click.svg');
+}
+
 .privacy-checkbox:checked {
   background-image: url('/assets/icons/form/checkbox-checked.svg');
 }
@@ -180,6 +192,10 @@
 .privacy-link {
   padding: 0 4px;
   color: var(--color-coral);
+}
+
+.privacy-link:hover {
+  font-weight: 700;
 }
 
 .privacy-error {
