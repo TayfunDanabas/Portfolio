@@ -74,3 +74,28 @@
     font-size: 14px;
   }
 }
+
+.social {
+  display: flex;
+  justify-self: end;
+  gap: 32px;
+  padding-bottom: 5px;
+
+  @include mobile {
+    order: -1;
+    margin-bottom: 96px;
+    padding-bottom: 0;
+  }
+}
+
+.icon-hover {
+  display: none;
+}
+
+.social-link:hover .icon-default {
+  display: none;
+}
+
+.social-link:hover .icon-hover {
+  display: block;
+}
