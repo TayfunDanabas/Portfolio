@@ -52,6 +52,7 @@
     "messageError": "Deine Nachricht ist erforderlich",
     "privacyError": "Bitte akzeptiere die Datenschutzerklärung.",
     "sendSuccess": "Danke! Deine Nachricht wurde gesendet.",
-    "sendError": "Senden fehlgeschlagen. Bitte versuche es später noch einmal."
+    "sendError": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.",
+    "scrollUp": "Nach oben scrollen"
   }
 }

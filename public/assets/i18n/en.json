@@ -52,6 +52,7 @@
     "messageError": "Your message is required",
     "privacyError": "Please accept the privacy policy.",
     "sendSuccess": "Thank you! Your message has been sent.",
-    "sendError": "Sending failed. Please try again later."
+    "sendError": "Sending failed. Please try again later.",
+    "scrollUp": "Scroll to top"
   }
 }

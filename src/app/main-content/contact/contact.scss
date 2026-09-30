@@ -11,6 +11,7 @@
 }
 
 .contact-content {
+  position: relative;
   width: 100%;
   max-width: 1180px;
 
@@ -99,9 +100,9 @@
   }
 
   @include mobile {
-    order: 1;
+    order: 2;
     align-items: center;
-    margin-top: 72px;
+    margin-top: 22px;
   }
 }
 
@@ -357,7 +358,8 @@
   color: var(--color-success);
 
   @include mobile {
-    left: 0;
+    right: 40px;
+    left: 40px;
     font-size: 14px;
     text-align: center;
   }
@@ -365,4 +367,57 @@
 
 .form-feedback.error {
   color: var(--color-error);
+}
+
+.arrow-up {
+  position: absolute;
+  top: 98px;
+  right: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 38px;
+  height: 68px;
+  padding-top: 6px;
+  border: 1px solid transparent;
+
+  @include tablet {
+    position: static;
+    margin: 48px -8px 0 auto;
+  }
+
+  @include mobile {
+    order: 1;
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.arrow-up:hover {
+  border-color: var(--color-mint);
+
+  @include mobile {
+    border-color: transparent;
+  }
+}
+
+.arrow-hover {
+  display: none;
+}
+
+.arrow-up:hover .arrow-default {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.arrow-up:hover .arrow-hover {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
 }
