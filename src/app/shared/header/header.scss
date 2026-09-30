@@ -66,6 +66,12 @@
   color: var(--color-mint);
 }
 
+.nav-link.active {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--color-mint);
+}
+
 .language {
   display: flex;
   align-items: center;

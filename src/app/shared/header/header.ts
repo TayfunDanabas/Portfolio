@@ -12,6 +12,7 @@ export class Header implements OnInit {
 
   currentLanguage = 'de';
   isMenuOpen = false;
+  activeSection = '';
 
   navItems = [
     { label: 'nav.whyMe', link: '#why-me' },
@@ -30,6 +31,16 @@ export class Header implements OnInit {
     this.translate.use(language);
     localStorage.setItem('language', language);
     document.documentElement.lang = language;
+  }
+
+  onScroll() {
+    this.activeSection = '';
+    for (const item of this.navItems) {
+      const section = document.querySelector(item.link);
+      if (section && section.getBoundingClientRect().top < window.innerHeight / 2) {
+        this.activeSection = item.link;
+      }
+    }
   }
 
   toggleMenu() {

@@ -1,10 +1,12 @@
-<header class="header">
+<header class="header" (window:scroll)="onScroll()">
   <div class="header-content">
     <div class="menu">
       <span class="logo">&lt;TD&gt;</span>
       <nav class="nav">
         @for (item of navItems; track item.link) {
-          <a class="nav-link" [href]="item.link">{{ item.label | translate }}</a>
+          <a class="nav-link" [class.active]="activeSection === item.link" [href]="item.link">
+            {{ item.label | translate }}
+          </a>
         }
       </nav>
     </div>
