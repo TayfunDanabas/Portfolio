@@ -38,6 +38,13 @@
     "headline": "Contact me",
     "text": "Got a question, a project or an open position? Write me a message. I am looking for a job as a fullstack developer.",
     "email": "E-mail:",
-    "phone": "Tel:"
+    "phone": "Tel:",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "privacyBefore": "I've read the",
+    "privacyLink": "privacy policy",
+    "privacyAfter": "and agree to the processing of my data as outlined.",
+    "send": "Send"
   }
 }

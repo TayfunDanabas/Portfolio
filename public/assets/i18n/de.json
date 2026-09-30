@@ -38,6 +38,13 @@
     "headline": "Kontaktiere mich",
     "text": "Du hast eine Frage, ein Projekt oder eine offene Stelle? Schreib mir eine Nachricht. Ich suche eine Stelle als Fullstack-Entwickler.",
     "email": "E-Mail:",
-    "phone": "Tel:"
+    "phone": "Tel:",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "Deine E-Mail",
+    "messagePlaceholder": "Deine Nachricht",
+    "privacyBefore": "Ich habe die",
+    "privacyLink": "Datenschutzerklärung",
+    "privacyAfter": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "send": "Senden"
   }
 }

@@ -17,5 +17,41 @@
         </a>
       </div>
     </div>
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-fields">
+        <input
+          class="form-input"
+          formControlName="name"
+          type="text"
+          autocomplete="name"
+          [placeholder]="'contact.namePlaceholder' | translate"
+        />
+        <input
+          class="form-input"
+          formControlName="email"
+          type="email"
+          autocomplete="email"
+          [placeholder]="'contact.emailPlaceholder' | translate"
+        />
+        <textarea
+          class="form-input form-message"
+          formControlName="message"
+          [placeholder]="'contact.messagePlaceholder' | translate"
+        ></textarea>
+      </div>
+      <div class="form-bottom">
+        <div class="privacy">
+          <input id="privacy" class="privacy-checkbox" type="checkbox" formControlName="privacy" />
+          <label class="privacy-text" for="privacy">
+            {{ 'contact.privacyBefore' | translate }}
+            <span class="privacy-link">{{ 'contact.privacyLink' | translate }}</span>
+            {{ 'contact.privacyAfter' | translate }}
+          </label>
+        </div>
+        <button class="btn-secondary form-button" type="submit">
+          {{ 'contact.send' | translate }}
+        </button>
+      </div>
+    </form>
   </div>
 </section>
