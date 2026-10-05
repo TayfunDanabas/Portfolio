@@ -1,10 +1,15 @@
 <header class="header" (window:scroll)="onScroll()">
   <div class="header-content">
     <div class="menu">
-      <span class="logo">&lt;TD&gt;</span>
+      <a class="logo" routerLink="/" (click)="closeMenu()">&lt;TD&gt;</a>
       <nav class="nav">
-        @for (item of navItems; track item.link) {
-          <a class="nav-link" [class.active]="activeSection === item.link" [href]="item.link">
+        @for (item of navItems; track item.fragment) {
+          <a
+            class="nav-link"
+            [class.active]="activeSection === item.fragment"
+            routerLink="/"
+            [fragment]="item.fragment"
+          >
             {{ item.label | translate }}
           </a>
         }
@@ -32,8 +37,8 @@
 
   <div class="mobile-menu" [class.open]="isMenuOpen">
     <nav class="mobile-nav">
-      @for (item of navItems; track item.link) {
-        <a class="mobile-nav-link" [href]="item.link" (click)="closeMenu()">
+      @for (item of navItems; track item.fragment) {
+        <a class="mobile-nav-link" routerLink="/" [fragment]="item.fragment" (click)="closeMenu()">
           {{ item.label | translate }}
         </a>
       }

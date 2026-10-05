@@ -1,9 +1,10 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  imports: [TranslatePipe],
+  imports: [RouterLink, TranslatePipe],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',
@@ -17,10 +18,10 @@ export class Header implements OnInit {
   activeSection = '';
 
   navItems = [
-    { label: 'nav.whyMe', link: '#why-me' },
-    { label: 'nav.skills', link: '#skills' },
-    { label: 'nav.projects', link: '#projects' },
-    { label: 'nav.contact', link: '#contact' },
+    { label: 'nav.whyMe', fragment: 'why-me' },
+    { label: 'nav.skills', fragment: 'skills' },
+    { label: 'nav.projects', fragment: 'projects' },
+    { label: 'nav.contact', fragment: 'contact' },
   ];
 
   ngOnInit() {
@@ -43,9 +44,9 @@ export class Header implements OnInit {
   onScroll() {
     this.activeSection = '';
     for (const item of this.navItems) {
-      const section = document.querySelector(item.link);
+      const section = document.getElementById(item.fragment);
       if (section && section.getBoundingClientRect().top < window.innerHeight / 2) {
-        this.activeSection = item.link;
+        this.activeSection = item.fragment;
       }
     }
   }
