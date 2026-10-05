@@ -1,0 +1,35 @@
+<section class="legal">
+  <div class="legal-content">
+    <a class="legal-back" routerLink="/" [attr.aria-label]="'legal.back' | translate">
+      <img src="./assets/icons/arrows/arrow-back.svg" alt="" />
+    </a>
+    <h1 class="legal-headline">{{ 'legalNotice.headline' | translate }}</h1>
+    <div class="legal-sections">
+      <div>
+        <h2 class="legal-title">{{ 'legalNotice.imprint' | translate }}</h2>
+        <ul class="legal-list">
+          <li>Tayfun Danabas</li>
+          <li>Dorneburger Straße 14</li>
+          <li>44652 Herne</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="legal-subtitle">{{ 'legal.contact' | translate }}</h3>
+        <p class="legal-text">
+          {{ 'contact.email' | translate }}
+          <a href="mailto:danabas285@gmail.com">danabas285&#64;gmail.com</a>
+        </p>
+        <p class="legal-text">
+          {{ 'contact.phone' | translate }}
+          <a href="tel:+4917642011407">0176 420 114 07</a>
+        </p>
+      </div>
+      @for (section of sections; track section) {
+        <div>
+          <h3 class="legal-subtitle">{{ 'legalNotice.' + section + 'Title' | translate }}</h3>
+          <p class="legal-text">{{ 'legalNotice.' + section + 'Text' | translate }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

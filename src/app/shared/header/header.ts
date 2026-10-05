@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
@@ -9,6 +10,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 })
 export class Header implements OnInit {
   private translate = inject(TranslateService);
+  private viewportScroller = inject(ViewportScroller);
 
   currentLanguage = 'de';
   isMenuOpen = false;
@@ -22,8 +24,13 @@ export class Header implements OnInit {
   ];
 
   ngOnInit() {
+    this.viewportScroller.setOffset(() => [0, this.getHeaderHeight()]);
     const savedLanguage = localStorage.getItem('language');
     this.switchLanguage(savedLanguage === 'en' ? 'en' : 'de');
+  }
+
+  getHeaderHeight() {
+    return document.querySelector('.header')?.clientHeight ?? 0;
   }
 
   switchLanguage(language: string) {

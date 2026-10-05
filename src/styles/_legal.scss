@@ -1,0 +1,85 @@
+@use 'mixins' as *;
+
+.legal {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--header-height) + 56px) clamp(40px, 7.3vw, 105px) 96px;
+
+  @include mobile {
+    padding: calc(var(--header-height) + 24px) 20px 48px;
+  }
+}
+
+.legal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1040px;
+}
+
+.legal-back {
+  display: none;
+
+  @include mobile {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 56px;
+  }
+}
+
+.legal-headline {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-coral);
+
+  @include mobile {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.legal-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 64px;
+
+  @include mobile {
+    margin-top: 32px;
+  }
+}
+
+.legal-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-coral);
+}
+
+.legal-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-coral);
+}
+
+.legal-text,
+.legal-list {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.legal-text {
+  white-space: pre-line;
+}
+
+.legal-text a:hover {
+  text-decoration: underline;
+}
+
+.legal-list {
+  padding-left: 20px;
+  list-style: disc;
+}

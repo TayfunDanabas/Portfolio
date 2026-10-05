@@ -54,5 +54,28 @@
     "sendSuccess": "Danke! Deine Nachricht wurde gesendet.",
     "sendError": "Senden fehlgeschlagen. Bitte versuche es später noch einmal.",
     "scrollUp": "Nach oben scrollen"
+  },
+  "footer": {
+    "legalNotice": "Impressum"
+  },
+  "legal": {
+    "back": "Zurück zur Startseite",
+    "contact": "Kontakt"
+  },
+  "legalNotice": {
+    "headline": "Impressum",
+    "imprint": "Angaben gemäß § 5 DDG",
+    "termsTitle": "Nutzungsbedingungen",
+    "termsText": "Mit dem Aufruf und der Nutzung dieses Portfolios erkennst du die folgenden Bedingungen sowie alle Richtlinien, Hinweise oder Änderungen an, die dir von Zeit zu Zeit angezeigt werden. Ich kann die Bedingungen jederzeit ohne vorherige Ankündigung ändern.",
+    "scopeTitle": "Umfang und Eigentum des Produkts",
+    "scopeText": "Dieses Portfolio ist im Rahmen meiner Umschulung zum Softwareentwickler an der Developer Akademie GmbH entstanden. Es dient Lernzwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung gedacht. Daher kann ich keine dauerhafte Verfügbarkeit, Zuverlässigkeit, Richtigkeit oder sonstige Qualität garantieren.\n\nDas Design dieses Portfolios gehört der Developer Akademie GmbH. Eine unerlaubte Nutzung, Vervielfältigung, Änderung, Verbreitung oder Nachbildung des Designs ist untersagt.",
+    "rightsTitle": "Eigentumsrechte",
+    "rightsText": "Mit Ausnahme des Designs, das der Developer Akademie GmbH gehört, liegen alle Rechte an diesem Portfolio bei mir. Das gilt auch für urheberrechtlich geschützte Inhalte, Marken und andere geschützte Informationen.",
+    "useTitle": "Nutzung des Produkts",
+    "useText": "Dieses Portfolio darf nur für rechtmäßige Zwecke und im Einklang mit allen geltenden Gesetzen genutzt werden. Jede Nutzung für illegale Aktivitäten oder um andere Personen zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist untersagt.",
+    "disclaimerTitle": "Gewährleistungs- und Haftungsausschluss",
+    "disclaimerText": "Dieses Portfolio wird ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, insbesondere ohne Gewähr für Marktgängigkeit, Eignung für einen bestimmten Zweck oder die Nichtverletzung von Rechten Dritter. Soweit gesetzlich zulässig, haften weder ich noch die Developer Akademie für direkte, indirekte, zufällige, besondere oder Folgeschäden, zum Beispiel entgangenen Gewinn oder den Verlust von Daten, die aus der Nutzung dieses Portfolios oder im Zusammenhang damit entstehen, auch wenn auf die Möglichkeit solcher Schäden hingewiesen wurde.",
+    "indemnityTitle": "Freistellung",
+    "indemnityText": "Du stellst mich, die Developer Akademie sowie deren Partner, Mitarbeitende und Beauftragte von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) frei, die aus deiner Nutzung dieses Portfolios oder einem Verstoß gegen dieses Impressum entstehen.\n\nBei Fragen oder Hinweisen erreichst du mich unter danabas285@gmail.com.\n\nStand: 30. September 2026"
   }
 }
