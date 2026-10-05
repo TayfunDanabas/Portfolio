@@ -44,22 +44,30 @@
           alt=""
         />
       </a>
-      <a class="social-link" aria-label="LinkedIn">
-        <img
-          class="icon-default"
-          src="./assets/icons/social/linkedin.svg"
-          width="30"
-          height="30"
-          alt=""
-        />
-        <img
-          class="icon-hover"
-          src="./assets/icons/social/linkedin-hover.svg"
-          width="30"
-          height="30"
-          alt=""
-        />
-      </a>
+      @if (linkedInUrl) {
+        <a
+          class="social-link"
+          [href]="linkedInUrl"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <img
+            class="icon-default"
+            src="./assets/icons/social/linkedin.svg"
+            width="30"
+            height="30"
+            alt=""
+          />
+          <img
+            class="icon-hover"
+            src="./assets/icons/social/linkedin-hover.svg"
+            width="30"
+            height="30"
+            alt=""
+          />
+        </a>
+      }
     </div>
   </div>
   <nav class="footer-links">

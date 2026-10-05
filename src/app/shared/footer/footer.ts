@@ -10,4 +10,5 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Footer {
   year = new Date().getFullYear();
+  linkedInUrl = '';
 }
