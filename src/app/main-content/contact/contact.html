@@ -87,7 +87,9 @@
           <input id="privacy" class="privacy-checkbox" type="checkbox" formControlName="privacy" />
           <label class="privacy-text" for="privacy">
             {{ 'contact.privacyBefore' | translate }}
-            <span class="privacy-link">{{ 'contact.privacyLink' | translate }}</span>
+            <a class="privacy-link" routerLink="/datenschutz" target="_blank">
+              {{ 'contact.privacyLink' | translate }}
+            </a>
             {{ 'contact.privacyAfter' | translate }}
           </label>
           @if (isInvalid('privacy')) {

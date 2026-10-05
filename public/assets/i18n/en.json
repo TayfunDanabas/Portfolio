@@ -56,7 +56,8 @@
     "scrollUp": "Scroll to top"
   },
   "footer": {
-    "legalNotice": "Legal notice"
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy"
   },
   "legal": {
     "back": "Back to home page",
@@ -77,5 +78,27 @@
     "disclaimerText": "Portfolio is provided “as is” without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will I or the Developer Akademie be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if I have been advised of the possibility of such damages, arising out of or in connection with the use or performance of Portfolio.",
     "indemnityTitle": "Indemnity",
     "indemnityText": "You agree to indemnify, defend and hold harmless me, the Developer Akademie, and their affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of Portfolio and/or your breach of this Legal Notice.\n\nFor any questions or notices, please contact me at danabas285@gmail.com.\n\nDate: September 30, 2026"
+  },
+  "privacyPolicy": {
+    "headline": "Privacy Policy",
+    "responsible": "Controller",
+    "generalTitle": "General information",
+    "generalText": "This privacy policy explains which personal data is processed when you visit this website, for what purpose, and which rights you have. Personal data is any data that can be used to identify you personally.",
+    "hostingTitle": "Hosting and server log files",
+    "hostingText": "This website is hosted by an external hosting provider. Each time you visit it, the server automatically stores information that your browser transmits (server log files). This includes your IP address, the date and time of access, the requested page, the previously visited page (referrer) as well as the browser and operating system you use.\n\nThis data is necessary to provide the website securely and reliably. The legal basis is Art. 6 (1) (f) GDPR. My legitimate interest is a secure and error-free presentation of the website. The data is not combined with other data sources.",
+    "sslTitle": "SSL or TLS encryption",
+    "sslText": "For security reasons, this website uses SSL or TLS encryption. You can recognize an encrypted connection by the address bar of your browser starting with “https://” and showing a lock symbol.",
+    "contactFormTitle": "Contact form",
+    "contactFormText": "If you send me a message via the contact form, I process your name, your email address and your message in order to answer your request. The data is sent to me by email and is not passed on to third parties.\n\nThe legal basis is your consent according to Art. 6 (1) (a) GDPR, which you give via the checkbox in the form. You can withdraw it at any time by sending me an email. This does not affect the lawfulness of the processing carried out until then. I delete your data as soon as your request has been dealt with and there are no legal retention obligations.",
+    "storageTitle": "Local storage",
+    "storageText": "So that the website shows your chosen language again on your next visit, it is saved in the local storage of your browser. This information is not transmitted to me and is only used to display the website the way you set it up (Section 25 (2) No. 2 TDDDG). You can delete the entry at any time in your browser settings. This website does not use cookies.",
+    "fontsTitle": "Fonts",
+    "fontsText": "The fonts on this website are hosted locally. No connection to servers of Google or other providers is established when you visit the page.",
+    "linksTitle": "External links",
+    "linksText": "This website contains links to external websites, for example to GitHub and to my projects. You are only redirected to the respective page when you click a link. The respective provider is responsible for the data processing there.",
+    "rightsTitle": "Your rights",
+    "rightsText": "You have the right to access your stored data (Art. 15 GDPR), to rectification (Art. 16 GDPR), to erasure (Art. 17 GDPR), to restriction of processing (Art. 18 GDPR), to data portability (Art. 20 GDPR) and to object to the processing (Art. 21 GDPR). You can withdraw any consent you have given at any time (Art. 7 (3) GDPR). Just send me an email.",
+    "complaintTitle": "Right to lodge a complaint",
+    "complaintText": "You have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The authority responsible for me is the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia.\n\nDate: September 30, 2026"
   }
 }

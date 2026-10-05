@@ -56,7 +56,8 @@
     "scrollUp": "Nach oben scrollen"
   },
   "footer": {
-    "legalNotice": "Impressum"
+    "legalNotice": "Impressum",
+    "privacyPolicy": "Datenschutz"
   },
   "legal": {
     "back": "Zurück zur Startseite",
@@ -77,5 +78,27 @@
     "disclaimerText": "Dieses Portfolio wird ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, insbesondere ohne Gewähr für Marktgängigkeit, Eignung für einen bestimmten Zweck oder die Nichtverletzung von Rechten Dritter. Soweit gesetzlich zulässig, haften weder ich noch die Developer Akademie für direkte, indirekte, zufällige, besondere oder Folgeschäden, zum Beispiel entgangenen Gewinn oder den Verlust von Daten, die aus der Nutzung dieses Portfolios oder im Zusammenhang damit entstehen, auch wenn auf die Möglichkeit solcher Schäden hingewiesen wurde.",
     "indemnityTitle": "Freistellung",
     "indemnityText": "Du stellst mich, die Developer Akademie sowie deren Partner, Mitarbeitende und Beauftragte von allen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) frei, die aus deiner Nutzung dieses Portfolios oder einem Verstoß gegen dieses Impressum entstehen.\n\nBei Fragen oder Hinweisen erreichst du mich unter danabas285@gmail.com.\n\nStand: 30. September 2026"
+  },
+  "privacyPolicy": {
+    "headline": "Datenschutzerklärung",
+    "responsible": "Verantwortlicher",
+    "generalTitle": "Allgemeine Hinweise",
+    "generalText": "Diese Datenschutzerklärung informiert dich darüber, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden, zu welchem Zweck das geschieht und welche Rechte du hast. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst.",
+    "hostingTitle": "Hosting und Server-Logfiles",
+    "hostingText": "Diese Website wird bei einem externen Hosting-Anbieter gehostet. Bei jedem Aufruf speichert der Server automatisch Informationen, die dein Browser übermittelt (Server-Logfiles). Dazu gehören deine IP-Adresse, Datum und Uhrzeit des Zugriffs, die aufgerufene Seite, die zuvor besuchte Seite (Referrer) sowie der verwendete Browser und das Betriebssystem.\n\nDiese Daten sind nötig, um die Website sicher und stabil bereitzustellen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse liegt in einer fehlerfreien und sicheren Darstellung der Website. Die Daten werden nicht mit anderen Datenquellen zusammengeführt.",
+    "sslTitle": "SSL- bzw. TLS-Verschlüsselung",
+    "sslText": "Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennst du daran, dass die Adresszeile deines Browsers mit „https://“ beginnt und ein Schloss-Symbol angezeigt wird.",
+    "contactFormTitle": "Kontaktformular",
+    "contactFormText": "Wenn du mir über das Kontaktformular eine Nachricht schickst, verarbeite ich deinen Namen, deine E-Mail-Adresse und deine Nachricht, um deine Anfrage zu beantworten. Die Daten werden per E-Mail an mich gesendet und nicht an Dritte weitergegeben.\n\nRechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die du über die Checkbox im Formular erteilst. Du kannst sie jederzeit per E-Mail an mich widerrufen. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt davon unberührt. Deine Daten lösche ich, sobald deine Anfrage erledigt ist und keine gesetzlichen Aufbewahrungspflichten bestehen.",
+    "storageTitle": "Lokale Speicherung",
+    "storageText": "Damit die Website deine gewählte Sprache beim nächsten Besuch wieder anzeigt, wird sie im lokalen Speicher deines Browsers (Local Storage) abgelegt. Diese Information wird nicht an mich übertragen und dient nur dazu, die Website so anzuzeigen, wie du sie eingestellt hast (§ 25 Abs. 2 Nr. 2 TDDDG). Du kannst den Eintrag jederzeit in den Einstellungen deines Browsers löschen. Cookies werden auf dieser Website nicht verwendet.",
+    "fontsTitle": "Schriftarten",
+    "fontsText": "Die Schriftarten dieser Website sind lokal eingebunden. Beim Aufruf der Seite wird keine Verbindung zu Servern von Google oder anderen Anbietern hergestellt.",
+    "linksTitle": "Externe Links",
+    "linksText": "Diese Website enthält Links zu externen Seiten, zum Beispiel zu GitHub und zu meinen Projekten. Erst wenn du einen Link anklickst, wirst du zur jeweiligen Seite weitergeleitet. Für die Datenverarbeitung dort ist der jeweilige Anbieter verantwortlich.",
+    "rightsTitle": "Deine Rechte",
+    "rightsText": "Du hast jederzeit das Recht auf Auskunft über deine gespeicherten Daten (Art. 15 DSGVO), auf Berichtigung (Art. 16 DSGVO), auf Löschung (Art. 17 DSGVO), auf Einschränkung der Verarbeitung (Art. 18 DSGVO), auf Datenübertragbarkeit (Art. 20 DSGVO) und auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Eine erteilte Einwilligung kannst du jederzeit widerrufen (Art. 7 Abs. 3 DSGVO). Schreib mir dazu einfach eine E-Mail.",
+    "complaintTitle": "Beschwerderecht",
+    "complaintText": "Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für mich zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen.\n\nStand: 30. September 2026"
   }
 }
