@@ -24,3 +24,10 @@ npm run build
 ```
 
 The production files are created in `dist/portfolio/browser`.
+
+## Deployment
+
+Upload the content of `dist/portfolio/browser` to the web server, including:
+
+- `.htaccess` – so that pages like `/impressum` also work after a reload
+- `sendMail.php` – sends the messages from the contact form
