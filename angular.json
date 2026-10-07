@@ -58,7 +58,10 @@
               "includePaths": [
                 "src/styles"
               ]
-            }
+            },
+            "externalDependencies": [
+              "assets/*"
+            ]
           },
           "configurations": {
             "production": {
