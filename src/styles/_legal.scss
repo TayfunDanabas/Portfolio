@@ -32,6 +32,7 @@
   font-weight: 500;
   line-height: 1.2;
   color: var(--color-coral);
+  overflow-wrap: break-word;
 
   @include mobile {
     font-size: 32px;
