@@ -34,10 +34,7 @@
   object-fit: cover;
 
   @include mobile {
-    width: 100%;
-    max-width: 490px;
-    height: auto;
-    aspect-ratio: 490 / 450;
+    display: none;
   }
 }
 
