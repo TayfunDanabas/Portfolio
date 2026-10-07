@@ -36,6 +36,7 @@
             class="form-input"
             [class.invalid]="isInvalid('name')"
             formControlName="name"
+            name="name"
             type="text"
             autocomplete="name"
             [placeholder]="
@@ -54,6 +55,7 @@
             class="form-input"
             [class.invalid]="isInvalid('email')"
             formControlName="email"
+            name="email"
             type="email"
             autocomplete="email"
             [placeholder]="
@@ -75,6 +77,7 @@
             class="form-input form-message"
             [class.invalid]="isInvalid('message')"
             formControlName="message"
+            name="message"
             [placeholder]="
               (isInvalid('message') ? 'contact.messageError' : 'contact.messagePlaceholder')
                 | translate
