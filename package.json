@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:da": "ng build --base-href /Portfolio/",
+    "build": "ng build && node scripts/copy-routes.js",
+    "build:da": "ng build --base-href /Portfolio/ && node scripts/copy-routes.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
