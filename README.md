@@ -32,7 +32,7 @@ Upload the content of `dist/portfolio/browser` to the web server, including:
 - `.htaccess` – so that pages like `/impressum` also work after a reload
 - `sendMail.php` – sends the messages from the contact form
 
-To host it in a `portfolio` folder, for example on the Developer Akademie server, build it with:
+To host it in a `Portfolio` folder, for example on the Developer Akademie server, build it with:
 
 ```bash
 npm run build:da
